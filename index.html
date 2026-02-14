@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KANI ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+text-align:center;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+width:90%;
+max-width:350px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+input{
+padding:10px;
+border-radius:10px;
+border:1px solid #ccc;
+margin-top:10px;
+}
+
+button{
+background:#ff3366;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:20px;
+margin-top:10px;
+font-size:16px;
+}
+
+#loveContent{
+display:none;
+}
+
+img{
+width:160px;
+height:160px;
+border-radius:50%;
+object-fit:cover;
+margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>🔐 Secret Love Page</h2>
+<p>Password enter பண்ணு ❤️</p>
+
+<input type="password" id="pass" placeholder="Password">
+<br>
+<button onclick="checkLove()">Open 💌</button>
+
+<div id="loveContent">
+
+<h2>😍 KANI ❤️</h2>
+
+<img src="photo.jpg">
+
+<p>
+நீ என் வாழ்க்கையில் வந்த பிறகு  
+என் உலகமே அழகாக மாறிவிட்டது 💖<br><br>
+I LOVE YOU FOREVER ❤️
+</p>
+
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/0cXVxSdii7K2ArGhIlFDMc"
+width="100%"
+height="80">
+</iframe>
+
+</div>
+</div>
+
+<script>
+function checkLove(){
+var password="121418";
+
+if(document.getElementById("pass").value==password){
+document.getElementById("loveContent").style.display="block";
+}
+else{
+alert("Wrong Password 😜");
+}
+}
+</script>
+
+</body>
+</html>
